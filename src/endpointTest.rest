@@ -1,0 +1,11 @@
+
+POST http://localhost:5000/api/users/register
+Content-Type: application/json
+
+{
+    "firstname": "Chukwunazaekpere",
+    "email": "ceo.naza.tech@gmail.com",
+    "password": "Chemmaco1993",
+    "confirmPassword": "Chemmaco1993e"
+}
+

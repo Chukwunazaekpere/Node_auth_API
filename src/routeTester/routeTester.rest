@@ -1,0 +1,43 @@
+
+GET http://localhost:5000/api/banking/auth/allUsers
+
+
+###
+GET http://localhost:5000/api/banking/transactions/all-transactions
+Content-Type: application/json
+
+{
+    "accountNumber": "2212377507"
+}
+
+###
+POST http://localhost:5000/api/banking/auth/register
+Content-Type: application/json
+
+{
+    "firstname": "Ngozi",
+    "lastname": "Benjamin",
+    "email": "NgoziBenjamin1758797@gmail.com",
+    "phone": "08169547034",
+    "password": "Ngozi5777",
+    "confirmPassword": "Ngozi5777"
+}
+
+###
+POST http://localhost:5000/api/banking/auth/login
+Content-Type: application/json
+
+{
+    "email": "covenentStephens77@gmail.com",
+    "password": "covenant5777"
+}
+
+
+###
+POST http://localhost:5000/api/banking/transactions/open-account
+Content-Type: application/json
+
+{
+    "phone": "08169547034",
+    "accountType": "Savings"
+}
